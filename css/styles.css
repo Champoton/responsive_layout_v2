@@ -28,9 +28,6 @@ a:hover {
   color: #6633ff;
 }
 
-ul {
-    margin: none;
-}
 
 img {
 	transition: all .5s;
@@ -163,7 +160,6 @@ Main-content
 
 .main-photo {
     margin: auto
-    order: 1;
 }
 
 .main-photo img {
@@ -392,9 +388,6 @@ Footer
     width: 30%;
     padding: 10px;
     }
-    
-
-
 
 }
 
