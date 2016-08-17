@@ -11,7 +11,8 @@ body {
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
   color: slategray;
-  background-color: gainsboro;
+  background-image: url(../img/brickwall_@2X.png);
+  background-repeat: repeat;
 }
 
 li {
@@ -83,16 +84,17 @@ Dry CSS
     border-top: 1px solid dimgray; 
 }
 
+
 /* =====================
 Main-header
 ======================== */
 
 .main-header {
     margin: 0 auto;
-	padding-top: 1em;
-	padding-bottom: 1.5em;
+	padding-top: .2em;
+	padding-bottom: .5em;
 	margin-bottom: 20px;
-	background-color: rgba(220, 220, 220, 0.9);
+	background-color: rgba(220, 220, 220, 0.2);
 }
 
 .main-nav  {
@@ -245,58 +247,42 @@ Contact
 Footer
 ======================== */
 
-.footer {
-    margin: 0 auto;
-	padding-top: 1em;
-	padding-bottom: 1.5em;
-}
+	.footer {
+	margin-bottom: 54px;
+	}
+	
+	.footer-menu {
+		display: inline-block;
+		text-align: right;
+	}
+	
+	.big-footer {
+		padding: 0 20px;
+	}
+	
+	.footer h1 {
+		font-size: 1.2em;
+		color: black;
+		padding: 5px 20px;
+		border-radius: 30px;
+		margin-right: 50px;
+		background: #ffdd18;
+		display: inline-block;
+	}
 
-.footer .container {
-		border-top: 1px solid dimgray;
-}
+	.footer a {
+	color: dimgray;
+	}
+	
+	.footer a:hover {
+	color: cadetblue;
+	}
+	
 
-.footer-name,
-.footer-main-nav li,
-.footer-main-nav ul  {
-        display: inline-block;
-    }
+	.big-footer {
+		display:  none;
+	}
 
-.footer-main-nav  {
-    padding: 0;
-    padding-top: 5px;
-}
-
-.footer-main-nav {
-    text-align: center;
-}
-
-.footer-main-nav li {
-    padding: 5px 15px;
-    margin: 8px 0;
-    border-radius: 5px;
-}
-
-.footer-main-nav a {
-    color: dimgray;
-    text-transform: uppercase;
-    display: block;
-}
-
-.footer-main-nav a:hover {
-    color: cadetblue;
-}
-
-.footer-main-nav li:hover {
-    background-color: #d7d7d7;
-    border-bottom: 3px solid #d7d7d7;
-    border-bottom-left-radius: 5px;
-}
-
-    .footer-main-nav {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
 
 /* ********************************
 @media
@@ -312,10 +298,6 @@ Footer
         margin-left: 10px;
         margin-right: 10px;
     }
-	
-
-	
-	
     
 /* main-content */
     
@@ -342,12 +324,23 @@ Footer
     }
 	
 /* skills */
-	
+
 	.skills-element {
 		width: 30%;
 	}
-	
-}
+/* footer */
+
+	.big-footer {
+		display: inline;
+	}
+
+	.to-top {
+		display: none;
+	}
+
+
+
+
 
 
 
