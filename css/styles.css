@@ -1,4 +1,4 @@
-/* Global Layout Set-up */
+/* Global Styles */
 
 
 * { 
@@ -19,12 +19,11 @@ li {
     list-style-type: none;
 }
 
-/* Link Styles */
-
 a {
   text-decoration: none;
   color: lightgray;
 }
+
 a:hover {
   color: #6633ff;
 }
@@ -33,6 +32,13 @@ ul {
     margin: none;
 }
 
+img {
+	transition: all .5s;
+}
+
+img:hover {
+	transform: rotate(-3deg) scale(1.1);
+}
 /* =====================
 h
 ======================== */
@@ -94,7 +100,7 @@ Main-header
 	padding-top: .2em;
 	padding-bottom: .5em;
 	margin-bottom: 20px;
-	background-color: rgba(220, 220, 220, 0.2);
+	background-color: rgba(220, 220, 220, 0.6);
 }
 
 .main-nav  {
@@ -111,24 +117,19 @@ Main-header
     padding-top: 5px;
     padding-bottom: 5px;
     margin: 8px 0;
-    border-radius: 5px;
 }
 
 .main-nav a {
     color: dimgray;
     text-transform: uppercase;
     display: block;
+    transition: all .5s;
 }
 
 .main-nav a:hover {
-    color: cadetblue;
+    color: darkorange;
 }
 
-.main-nav li:hover {
-    background-color: #d7d7d7;
-    border-bottom: 3px solid #d7d7d7;
-    border-bottom-left-radius: 5px;
-}
 
 
 /* =====================
@@ -272,10 +273,11 @@ Footer
 
 	.footer a {
 	color: dimgray;
+	transition: all .5s;
 	}
 	
 	.footer a:hover {
-	color: cadetblue;
+	color: darkorange;
 	}
 	
 
@@ -291,6 +293,10 @@ Footer
 @media screen and (min-width: 720px) {
     
 /* header   */
+    .main-header {
+        background-color: rgba(220, 220, 220, 0.2);
+}
+	
     .main-nav li {
         display: inline-block;
         padding-left: 20px;
