@@ -11,17 +11,11 @@ body {
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
   color: slategray;
+  background-color: gainsboro;
   background-image: url(../img/brickwall_@2X.png);
   background-repeat: repeat;
 }
 
-li {
-    list-style-type: none;
-}
-
-ul {
-	padding: 5px  0 10px 0;
-}
 
 a {
   text-decoration: none;
@@ -114,26 +108,26 @@ Main-nav
 }
 
 .name,
-.nav {
+.main-nav {
     text-align: center;
 }
 
 
 
-.nav li {
-    padding-top: 5px;
-    padding-bottom: 5px;
+.main-nav  {
     margin: 8px 0;
+    padding-bottom: 20px;
 }
 
-.nav a {
+.main-nav a {
     color: dimgray;
     text-transform: uppercase;
     display: block;
+    padding-bottom: 10px;
     transition: all .5s;
 }
 
-.nav a:hover {
+.main-nav a:hover {
     color: darkorange;
 }
 
@@ -304,7 +298,11 @@ Footer
         background-color: rgba(220, 220, 220, 0.2);
 }
 	
-    .nav li {
+    .main-nav {
+        padding-top: 20px;
+    }
+    
+    .main-nav a {
         display: inline-block;
         padding-left: 20px;
         padding-right: 20px;
@@ -364,7 +362,7 @@ Footer
     
     .main-header {
         text-align: center;
-	   position: fixed;
+	    position: fixed;
 	    top: 0;
 	    width: 100%;
 	    z-index: 1000;
@@ -378,11 +376,11 @@ Footer
     }
     
     .name,
-    .nav ul  {
+    .main-nav a  {
         display: inline-block;
     }
   
-    .nav {
+    .main-nav {
         position: absolute;
         right: 0;
         top: 0;
